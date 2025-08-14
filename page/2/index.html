@@ -170,6 +170,85 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/13/week1_txt1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gu1lityyyyy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | whi">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/08/13/week1_txt1/" class="post-title-link" itemprop="url">ecc1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-08-13 20:47:55" itemprop="dateCreated datePublished" datetime="2025-08-13T20:47:55+08:00">2025-08-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-08-14 23:41:27" itemprop="dateModified" datetime="2025-08-14T23:41:27+08:00">2025-08-14</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import *</span><br><span class="line">import gmpy2</span><br><span class="line">c_hex = &#x27;1bd2a47a5d275ba6356e1e2bd10d6c870693be540e9318c746e807a7672f3a75cc63841170126d7dba52d7f6f9cf0f8dce9705fc1785cc670b2658b05d4b24d8918f95594844bfa920c8ffe73160c2c313b3fdbc4541ec19828165e34afa7d05271cc6fd59d08138b88c11677e6ac3b39cff525dcb19694b0388d895f53805a5e5bd8cfb947080e4855aaf83ebd85a397526f7d76d26031386900cb44a2e4bd121412bcee7a6c1e9af411e234f130e68a428596265d3ec647e50f65cb81393f4bd38389a2b9010fd715582506b9054dc235aced50757462b77a5606f116853af0c1ea3c7cf0d304f885d86081f8bac8b67b0625122f75448c5b6eb8f1cc8a0df&#x27;</span><br><span class="line">n_hex = &#x27;c2b17c86a8950f6dafe0a633890e4271cfb20c5ffda2d6b3d035afa655ed05ec16c67b18832ed887f2cea83056af079cc75c2ce43c90cce3ed02c2e07d256f240344f1734adeee6dc2b3b4bbf6dcfc68518d0a74e3e66f1865db95ef4204457e6471903c2321ac97f3b8e3d8d935896e9fc9145a30a3e24e7c320490a9944c1e94d301c8388445532699e6189f4aa6a86f67f1d9b8fb0de4225e005bd27594cd33e36622b2cd8eb2781f0c24d33267d9f29309158942b681aab81f39d1b4a73bd17431b46a89a0e4c2c58b1e24e850355c63b72392600d3fff7a16f6ef80ea515709da3ef1d28782882b0dd2f76bf609590db31979c5d1fd03f75d9d8f1c5069&#x27;</span><br><span class="line">e_hex = &#x27;10001&#x27;</span><br><span class="line"></span><br><span class="line">c = int(c_hex, 16)</span><br><span class="line">n = int(n_hex, 16)</span><br><span class="line">e = int(e_hex, 16)</span><br><span class="line"></span><br><span class="line">p = gmpy2.gcd(c,n)</span><br><span class="line">q = n//p</span><br><span class="line">phi = (q-1)*(p-1)</span><br><span class="line">d = gmpy2.invert(e,phi)</span><br><span class="line">M = pow(c,d,n)</span><br><span class="line">m = M//(2022*1011*p)</span><br><span class="line">print(long_to_bytes(m))</span><br></pre></td></tr></table></figure>
+<p>16进制转码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">c = M^e mod n</span><br><span class="line">c = M^e + kqp</span><br><span class="line">c mod p = 0</span><br><span class="line">n = p*q</span><br><span class="line">p是c的因子，所以求最大公因数得p，剩余正常rsa解密</span><br><span class="line">p = gcd(c,p)</span><br></pre></td></tr></table></figure>
+<p>结果：b’977260aae9b5}’</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/13/js%E9%80%86%E5%90%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -247,85 +326,6 @@ k(t,a)-&gt;k(e,t)这里e和t指的是一个<br />
 而<mark>const a = (new Date).getTime();</mark><br />
 <img src="https://i.postimg.cc/9MzC2Sy5/2024-11-23-165103.png" alt="" /><br />
 转换一下时间</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/13/week1_txt1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Gu1lityyyyy">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | whi">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/13/week1_txt1/" class="post-title-link" itemprop="url">ecc1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-08-13 20:47:55" itemprop="dateCreated datePublished" datetime="2025-08-13T20:47:55+08:00">2025-08-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-08-14 23:41:27" itemprop="dateModified" datetime="2025-08-14T23:41:27+08:00">2025-08-14</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import *</span><br><span class="line">import gmpy2</span><br><span class="line">c_hex = &#x27;1bd2a47a5d275ba6356e1e2bd10d6c870693be540e9318c746e807a7672f3a75cc63841170126d7dba52d7f6f9cf0f8dce9705fc1785cc670b2658b05d4b24d8918f95594844bfa920c8ffe73160c2c313b3fdbc4541ec19828165e34afa7d05271cc6fd59d08138b88c11677e6ac3b39cff525dcb19694b0388d895f53805a5e5bd8cfb947080e4855aaf83ebd85a397526f7d76d26031386900cb44a2e4bd121412bcee7a6c1e9af411e234f130e68a428596265d3ec647e50f65cb81393f4bd38389a2b9010fd715582506b9054dc235aced50757462b77a5606f116853af0c1ea3c7cf0d304f885d86081f8bac8b67b0625122f75448c5b6eb8f1cc8a0df&#x27;</span><br><span class="line">n_hex = &#x27;c2b17c86a8950f6dafe0a633890e4271cfb20c5ffda2d6b3d035afa655ed05ec16c67b18832ed887f2cea83056af079cc75c2ce43c90cce3ed02c2e07d256f240344f1734adeee6dc2b3b4bbf6dcfc68518d0a74e3e66f1865db95ef4204457e6471903c2321ac97f3b8e3d8d935896e9fc9145a30a3e24e7c320490a9944c1e94d301c8388445532699e6189f4aa6a86f67f1d9b8fb0de4225e005bd27594cd33e36622b2cd8eb2781f0c24d33267d9f29309158942b681aab81f39d1b4a73bd17431b46a89a0e4c2c58b1e24e850355c63b72392600d3fff7a16f6ef80ea515709da3ef1d28782882b0dd2f76bf609590db31979c5d1fd03f75d9d8f1c5069&#x27;</span><br><span class="line">e_hex = &#x27;10001&#x27;</span><br><span class="line"></span><br><span class="line">c = int(c_hex, 16)</span><br><span class="line">n = int(n_hex, 16)</span><br><span class="line">e = int(e_hex, 16)</span><br><span class="line"></span><br><span class="line">p = gmpy2.gcd(c,n)</span><br><span class="line">q = n//p</span><br><span class="line">phi = (q-1)*(p-1)</span><br><span class="line">d = gmpy2.invert(e,phi)</span><br><span class="line">M = pow(c,d,n)</span><br><span class="line">m = M//(2022*1011*p)</span><br><span class="line">print(long_to_bytes(m))</span><br></pre></td></tr></table></figure>
-<p>16进制转码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">c = M^e mod n</span><br><span class="line">c = M^e + kqp</span><br><span class="line">c mod p = 0</span><br><span class="line">n = p*q</span><br><span class="line">p是c的因子，所以求最大公因数得p，剩余正常rsa解密</span><br><span class="line">p = gcd(c,p)</span><br></pre></td></tr></table></figure>
-<p>结果：b’977260aae9b5}’</p>
 
       
     </div>

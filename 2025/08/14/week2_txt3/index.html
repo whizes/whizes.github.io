@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.24.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="拆分题目  part1: 12345678910def ECC1(num):	p &#x3D; 146808027458411567	A &#x3D; 46056180	B &#x3D; 2316783294673	E &#x3D; EllipticCurve(GF(p),[A,B])	P &#x3D; E.random_point() 	Q &#x3D; num*P	print E	print &#x27;P:&#x27;,P	print &#x27;Q">
+<meta property="og:type" content="article">
+<meta property="og:title" content="whi">
+<meta property="og:url" content="http://example.com/2025/08/14/week2_txt3/index.html">
+<meta property="og:site_name" content="whi">
+<meta property="og:description" content="拆分题目  part1: 12345678910def ECC1(num):	p &#x3D; 146808027458411567	A &#x3D; 46056180	B &#x3D; 2316783294673	E &#x3D; EllipticCurve(GF(p),[A,B])	P &#x3D; E.random_point() 	Q &#x3D; num*P	print E	print &#x27;P:&#x27;,P	print &#x27;Q">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-08-14T15:35:39.036Z">
+<meta property="article:modified_time" content="2025-01-21T14:33:01.697Z">
+<meta property="article:author" content="Gu1lityyyyy">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2025/08/14/week2_txt3/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/08/14/week2_txt3/","path":"2025/08/14/week2_txt3/","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | whi</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+  <script src="/js/third-party/pace.js" defer></script>
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">whi</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#part1"><span class="nav-number">1.</span> <span class="nav-text"> part1:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#part2"><span class="nav-number">2.</span> <span class="nav-text"> part2:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#part3"><span class="nav-number">3.</span> <span class="nav-text"> part3:</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Gu1lityyyyy</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/08/14/week2_txt3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gu1lityyyyy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | whi">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-08-14 23:35:39" itemprop="dateCreated datePublished" datetime="2025-08-14T23:35:39+08:00">2025-08-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-21 22:33:01" itemprop="dateModified" datetime="2025-01-21T22:33:01+08:00">2025-01-21</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>拆分题目</p>
+<h4 id="part1"><a class="markdownIt-Anchor" href="#part1"></a> part1:</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def ECC1(num):</span><br><span class="line">	p = 146808027458411567</span><br><span class="line">	A = 46056180</span><br><span class="line">	B = 2316783294673</span><br><span class="line">	E = EllipticCurve(GF(p),[A,B])</span><br><span class="line">	P = E.random_point() </span><br><span class="line">	Q = num*P</span><br><span class="line">	print E</span><br><span class="line">	print &#x27;P:&#x27;,P</span><br><span class="line">	print &#x27;Q:&#x27;,Q</span><br></pre></td></tr></table></figure>
+<p>数比较小，直接出,典型已知qp求k.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import *</span><br><span class="line">from sage.all import *</span><br><span class="line">p = 146808027458411567</span><br><span class="line">a = 46056180</span><br><span class="line">b = 2316783294673</span><br><span class="line">E = EllipticCurve(GF(p),(a,b))</span><br><span class="line">P = E(119851377153561800,50725039619018388)</span><br><span class="line">Q = E(22306318711744209,111808951703508717)</span><br><span class="line"></span><br><span class="line">num1 =  discrete_log(Q,P,operation = &#x27;+&#x27;)#</span><br><span class="line">#求解私钥，通用方法；注意这里的运算要换成加法</span><br><span class="line">print(long_to_bytes(num1))</span><br></pre></td></tr></table></figure>
+<p><mark>b’025ab3d’</mark></p>
+<h4 id="part2"><a class="markdownIt-Anchor" href="#part2"></a> part2:</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">def ECC2(num):</span><br><span class="line">	p = 1256438680873352167711863680253958927079458741172412327087203</span><br><span class="line">	#import random</span><br><span class="line">	#A = random.randrange(389718923781273978681723687163812)</span><br><span class="line">	#B = random.randrange(816378675675716537126387613131232121431231)</span><br><span class="line">	A = 377999945830334462584412960368612</span><br><span class="line">	B = 604811648267717218711247799143415167229480</span><br><span class="line">	E = EllipticCurve(GF(p),[A,B])</span><br><span class="line">	P = E.random_point() </span><br><span class="line">	Q = num*P</span><br><span class="line">	print E</span><br><span class="line">	print &#x27;P:&#x27;,P</span><br><span class="line">	print &#x27;Q:&#x27;,Q</span><br><span class="line">	factors, exponents = zip(*factor(E.order()))</span><br><span class="line">	primes = [factors[i] ^ exponents[i] for i in range(len(factors))][:-1]</span><br><span class="line">	print primes</span><br><span class="line">	dlogs = []</span><br><span class="line">	for fac in primes:</span><br><span class="line">		t = int(int(P.order()) / int(fac))</span><br><span class="line">		dlog = discrete_log(t*Q,t*P,operation=&quot;+&quot;)</span><br><span class="line">		dlogs += [dlog]</span><br><span class="line">		print(&quot;factor: &quot;+str(fac)+&quot;, Discrete Log: &quot;+str(dlog)) #calculates discrete logarithm for each prime order</span><br><span class="line">	print num</span><br><span class="line">	print crt(dlogs,primes)</span><br></pre></td></tr></table></figure>
+<p>主要定义了一个加密方法,计算每个质因子的离散对数,这里 <mark>discrete_log(t<em>Q,t</em>P,operation=“+”)</mark>,在txt1的基础知识的第一个帖子有这个,Pohlig_Hellman算法<br />
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/oampamp1/article/details/104061969">https://blog.csdn.net/oampamp1/article/details/104061969</a><br />
+贴一下吧，这个讲的更清楚一些。<br />
+<a target="_blank" rel="noopener" href="https://www.codercto.com/a/26932.html">https://www.codercto.com/a/26932.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">from Crypto.Util.number import *</span><br><span class="line">p = 1256438680873352167711863680253958927079458741172412327087203</span><br><span class="line">a = 377999945830334462584412960368612</span><br><span class="line">b = 604811648267717218711247799143415167229480</span><br><span class="line">E = EllipticCurve(GF(p),(a,b))</span><br><span class="line">P=E(550637390822762334900354060650869238926454800955557622817950 ,700751312208881169841494663466728684704743091638451132521079)</span><br><span class="line">Q=E(1152079922659509908913443110457333432642379532625238229329830 ,819973744403969324837069647827669815566569448190043645544592)</span><br><span class="line">n=E.order()</span><br><span class="line">def f(n,P,Q):</span><br><span class="line">    factors, exponents = zip(*factor(n))</span><br><span class="line">    primes = [factors[i] ^ exponents[i] for i in range(len(factors))][:-1]</span><br><span class="line">    print (primes)</span><br><span class="line">    dlogs = []</span><br><span class="line">    for fac in primes:</span><br><span class="line">        t = int(int(P.order()) // int(fac))</span><br><span class="line">        dlog = discrete_log(t*Q,t*P,operation=&quot;+&quot;)</span><br><span class="line">        dlogs += [dlog]</span><br><span class="line">        print(&quot;factor: &quot;+str(fac)+&quot;, Discrete Log: &quot;+str(dlog)) #calculates discrete logarithm for each prime order</span><br><span class="line">    num2=crt(dlogs,primes)</span><br><span class="line">    return num2</span><br><span class="line">num2=f(n,P,Q)</span><br><span class="line">print(long_to_bytes(num2))</span><br></pre></td></tr></table></figure>
+<p><mark>b’9-2521-’</mark><br />
+直接copy过去，改一下//，但不知道为什么在shell里的sage跑不出来，显示discreate有问题</p>
+<h4 id="part3"><a class="markdownIt-Anchor" href="#part3"></a> part3:</h4>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def ECC3(num):</span><br><span class="line">	p = 0xd3ceec4c84af8fa5f3e9af91e00cabacaaaecec3da619400e29a25abececfdc9bd678e2708a58acb1bd15370acc39c596807dab6229dca11fd3a217510258d1b</span><br><span class="line">	A = 0x95fc77eb3119991a0022168c83eee7178e6c3eeaf75e0fdf1853b8ef4cb97a9058c271ee193b8b27938a07052f918c35eccb027b0b168b4e2566b247b91dc07</span><br><span class="line">	B = 0x926b0e42376d112ca971569a8d3b3eda12172dfb4929aea13da7f10fb81f3b96bf1e28b4a396a1fcf38d80b463582e45d06a548e0dc0d567fc668bd119c346b2</span><br><span class="line">	E = EllipticCurve(GF(p),[A,B])</span><br><span class="line">	P = E.random_point() </span><br><span class="line">	Q = num*P</span><br><span class="line">	print E</span><br><span class="line">	print &#x27;P:&#x27;,P</span><br><span class="line">	print &#x27;Q:&#x27;,Q</span><br></pre></td></tr></table></figure>
+<p>在椭圆曲线上，阶是指椭圆曲线上所有点的数量</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p = 0xd3ceec4c84af8fa5f3e9af91e00cabacaaaecec3da619400e29a25abececfdc9bd678e2708a58acb1bd15370acc39c596807dab6229dca11fd3a217510258d1b</span><br><span class="line">A = 0x95fc77eb3119991a0022168c83eee7178e6c3eeaf75e0fdf1853b8ef4cb97a9058c271ee193b8b27938a07052f918c35eccb027b0b168b4e2566b247b91dc07</span><br><span class="line">B = 0x926b0e42376d112ca971569a8d3b3eda12172dfb4929aea13da7f10fb81f3b96bf1e28b4a396a1fcf38d80b463582e45d06a548e0dc0d567fc668bd119c346b2</span><br><span class="line">E = EllipticCurve(GF(p),[A,B])</span><br><span class="line">P = E.random_point()</span><br><span class="line">print(P.order())</span><br><span class="line">#11093300438765357787693823122068501933326829181518693650897090781749379503427651954028543076247583697669597230934286751428880673539155279232304301123931419</span><br></pre></td></tr></table></figure>
+<p>发现与p一样，这里有个现成的攻击方法smart’s attack</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">p = 0xd3ceec4c84af8fa5f3e9af91e00cabacaaaecec3da619400e29a25abececfdc9bd678e2708a58acb1bd15370acc39c596807dab6229dca11fd3a217510258d1b</span><br><span class="line">A = 0x95fc77eb3119991a0022168c83eee7178e6c3eeaf75e0fdf1853b8ef4cb97a9058c271ee193b8b27938a07052f918c35eccb027b0b168b4e2566b247b91dc07</span><br><span class="line">B = 0x926b0e42376d112ca971569a8d3b3eda12172dfb4929aea13da7f10fb81f3b96bf1e28b4a396a1fcf38d80b463582e45d06a548e0dc0d567fc668bd119c346b2</span><br><span class="line">E = EllipticCurve(GF(p),[A,B])</span><br><span class="line">P = E(10121571443191913072732572831490534620810835306892634555532657696255506898960536955568544782337611042739846570602400973952350443413585203452769205144937861,8425218582467077730409837945083571362745388328043930511865174847436798990397124804357982565055918658197831123970115905304092351218676660067914209199149610)</span><br><span class="line">Q = E(964864009142237137341389653756165935542611153576641370639729304570649749004810980672415306977194223081235401355646820597987366171212332294914445469010927,5162185780511783278449342529269970453734248460302908455520831950343371147566682530583160574217543701164101226640565768860451999819324219344705421407572537)</span><br><span class="line">def SmartAttack(P,Q,p):</span><br><span class="line">    E = P.curve()</span><br><span class="line">    Eqp = EllipticCurve(Qp(p, 2), [ ZZ(t) + randint(0,p)*p for t in E.a_invariants() ])</span><br><span class="line"></span><br><span class="line">    P_Qps = Eqp.lift_x(ZZ(P.xy()[0]), all=True)</span><br><span class="line">    for P_Qp in P_Qps:</span><br><span class="line">        if GF(p)(P_Qp.xy()[1]) == P.xy()[1]:</span><br><span class="line">            break</span><br><span class="line"></span><br><span class="line">    Q_Qps = Eqp.lift_x(ZZ(Q.xy()[0]), all=True)</span><br><span class="line">    for Q_Qp in Q_Qps:</span><br><span class="line">        if GF(p)(Q_Qp.xy()[1]) == Q.xy()[1]:</span><br><span class="line">            break</span><br><span class="line"></span><br><span class="line">    p_times_P = p*P_Qp</span><br><span class="line">    p_times_Q = p*Q_Qp</span><br><span class="line"></span><br><span class="line">    x_P,y_P = p_times_P.xy()</span><br><span class="line">    x_Q,y_Q = p_times_Q.xy()</span><br><span class="line"></span><br><span class="line">    phi_P = -(x_P/y_P)</span><br><span class="line">    phi_Q = -(x_Q/y_Q)</span><br><span class="line">    k = phi_Q/phi_P</span><br><span class="line">    return ZZ(k)</span><br><span class="line">num3 = SmartAttack(P, Q, p)</span><br><span class="line">print(long_to_bytes(num3))</span><br></pre></td></tr></table></figure>
+<p><mark>b’4a81-9957-8c3381622434’</mark><br />
+应该是这个攻击方法的原文链接<a target="_blank" rel="noopener" href="https://crypto.stackexchange.com/questions/70454/why-smarts-attack-doesnt-work-on-this-ecdlp">https://crypto.stackexchange.com/questions/70454/why-smarts-attack-doesnt-work-on-this-ecdlp</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/08/14/week2_txt2/" rel="prev" title="">
+                  <i class="fa fa-angle-left"></i> 
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/08/14/week3_txt1/" rel="next" title="">
+                   <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2025-08 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Gu1lityyyyy</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1221,7 +1221,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff85ff;
+    background: #9f98ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2715,7 +2715,7 @@ body {
   background: rgba(255,255,255,0.9) none repeat scroll !important;
 }
 .header-inner {
-  background: rgba(255,255,255,0.9);
+  background: #fff;
 }
 .popup {
   opacity: 0.9;
